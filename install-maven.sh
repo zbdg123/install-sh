@@ -1,8 +1,9 @@
 #!/bin/bash
 
-wget wget --no-check-certificate https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz
+version=3.2.0
+wget wget --no-check-certificate https://dlcdn.apache.org/maven/maven-3/${version}/binaries/apache-maven-${version}-bin.tar.gz
 
-tar -zxvf apache-maven-3.8.4-bin.tar.gz -C /usr/local
+tar -zxvf apache-maven-${version}-bin.tar.gz -C /usr/local
 
 mv /usr/local/apache* /usr/local/maven
 
